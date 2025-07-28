@@ -4,6 +4,10 @@ This is a [JSON Resume](https://jsonresume.org) theme based on the [Macchiato th
 
 It's built using TypeScript/React/Tailwind to provide a more modern and streamlined development experience.
 
+I use this for my own resume which you can see here: **[https://adamhl.dev/resume](https://adamhl.dev/resume/)**
+
+<img width="450" alt="example" src="https://github.com/user-attachments/assets/e0785072-dab1-4f85-a7fb-e4c4fce4be18" />
+
 ## Why?
 
 Most JSON Resume themes are built using plain old JavaScript + a templating engine such as [Handlebars](https://handlebarsjs.com). Templating engine syntax quickly becomes messy and difficult to maintain, and the lack of type safety makes for a frustrating development experience.
