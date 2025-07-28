@@ -8,6 +8,9 @@ I use this for my own resume which you can see here: **[https://adamhl.dev/resum
 
 <img width="450" alt="example" src="https://github.com/user-attachments/assets/e0785072-dab1-4f85-a7fb-e4c4fce4be18" />
 
+> [!IMPORTANT]
+> This project is intended to be forked and used as a starting point for building your own theme. As such, it currently only supports a small subset of the JSON Resume schema.
+
 ## Why?
 
 Most JSON Resume themes are built using plain old JavaScript + a templating engine such as [Handlebars](https://handlebarsjs.com). Templating engine syntax quickly becomes messy and difficult to maintain, and the lack of type safety makes for a frustrating development experience.
@@ -15,9 +18,6 @@ Most JSON Resume themes are built using plain old JavaScript + a templating engi
 I wanted to use more modern, well-known tools (i.e. TypeScript/React/Tailwind) to get the all the benefits of type safety, IDE autocompletion, etc. There were some interesting technical challenges to solve in doing this which you can read more about in the [technical details](#technical-details) section.
 
 ## Usage
-
-> [!IMPORTANT]
-> This project is intended to be forked and used as a starting point for building your own theme. As such, it currently only supports a small subset of the JSON Resume schema.
 
 This project includes [resumed](https://github.com/rbardini/resumed) as a dev dependency so there's no need to install it globally.
 
