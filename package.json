@@ -35,22 +35,27 @@
     "watch": "./scripts/watch.sh"
   },
   "dependencies": {
-    "@tabler/icons-react": "^3.34.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "tailwindcss": "^4.1.11"
+    "@tabler/icons-react": "^3.35.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.13"
   },
   "devDependencies": {
-    "@adamhl8/configs": "^0.9.1",
-    "@biomejs/biome": "^2.1.1",
-    "@tailwindcss/cli": "^4.1.11",
+    "@adamhl8/configs": "^0.15.15",
+    "@arethetypeswrong/core": "^0.18.2",
+    "@biomejs/biome": "^2.2.4",
+    "@tailwindcss/cli": "^4.1.13",
     "@types/bun": "latest",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "@typescript/native-preview": "^7.0.0-dev.20250715.1",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@typescript/native-preview": "^7.0.0-dev.20250917.1",
     "json-schema-to-typescript": "^15.0.4",
+    "knip": "^5.63.1",
+    "markdown-toc": "^1.2.0",
+    "publint": "^0.3.12",
     "resumed": "^6.0.0",
     "tsc-alias": "^1.8.16",
-    "typescript": "^5.8.3"
+    "tsdown": "^0.15.2",
+    "typescript": "^5.9.2"
   }
 }
