@@ -6,7 +6,6 @@
       "suspicious": {
         "noArrayIndexKey": "off"
       },
-
       "nursery": {
         "noShadow": "off"
       }
