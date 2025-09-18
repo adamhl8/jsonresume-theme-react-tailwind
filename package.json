@@ -1,61 +1,66 @@
 {
-  "name": "jsonresume-theme-react-tailwind",
-  "version": "1.2.0",
-  "type": "module",
-  "description": "A JSON Resume theme built with React and Tailwind.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/adamhl8/jsonresume-theme-react-tailwind"
-  },
-  "homepage": "https://github.com/adamhl8/jsonresume-theme-react-tailwind",
-  "bugs": {
-    "url": "https://github.com/adamhl8/jsonresume-theme-react-tailwind/issues"
-  },
-  "author": {
-    "email": "adamhl@pm.me",
-    "name": "Adam Langbert",
-    "url": "https://github.com/adamhl8"
-  },
-  "license": "MIT",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    }
-  },
-  "files": ["dist/"],
-  "keywords": ["jsonresume", "jsonresume-theme"],
-  "scripts": {
-    "bundle": "bun lint && tsdown",
-    "lint": "markdown-toc -i --bullets '-' --maxdepth 3 ./README.md && tsc --noEmit && biome check --write && adamhl8-knip",
-    "prepare": "find .githooks -type f -exec ln -srf {} .git/hooks/ \\; || true",
-    "prepublishOnly": "bun bundle",
-    "refresh-schema": "bun run refresh-schema.ts",
-    "render": "./scripts/render.sh",
-    "watch": "./scripts/watch.sh"
-  },
-  "dependencies": {
-    "@tabler/icons-react": "^3.35.0",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "tailwindcss": "^4.1.13"
-  },
-  "devDependencies": {
-    "@adamhl8/configs": "^0.15.15",
-    "@arethetypeswrong/core": "^0.18.2",
-    "@biomejs/biome": "^2.2.4",
-    "@tailwindcss/cli": "^4.1.13",
-    "@types/bun": "latest",
-    "@types/react": "^19.1.13",
-    "@types/react-dom": "^19.1.9",
-    "@typescript/native-preview": "^7.0.0-dev.20250917.1",
-    "json-schema-to-typescript": "^15.0.4",
-    "knip": "^5.63.1",
-    "markdown-toc": "^1.2.0",
-    "publint": "^0.3.12",
-    "resumed": "^6.0.0",
-    "tsc-alias": "^1.8.16",
-    "tsdown": "^0.15.2",
-    "typescript": "^5.9.2"
-  }
+	"name": "jsonresume-theme-react-tailwind",
+	"version": "1.2.0",
+	"type": "module",
+	"description": "A JSON Resume theme built with React and Tailwind.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/adamhl8/jsonresume-theme-react-tailwind"
+	},
+	"homepage": "https://github.com/adamhl8/jsonresume-theme-react-tailwind",
+	"bugs": {
+		"url": "https://github.com/adamhl8/jsonresume-theme-react-tailwind/issues"
+	},
+	"author": {
+		"email": "adamhl@pm.me",
+		"name": "Adam Langbert",
+		"url": "https://github.com/adamhl8"
+	},
+	"license": "MIT",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"files": [
+		"dist/"
+	],
+	"keywords": [
+		"jsonresume",
+		"jsonresume-theme"
+	],
+	"scripts": {
+		"bundle": "bun lint && tsdown",
+		"lint": "markdown-toc -i --bullets '-' --maxdepth 3 ./README.md && tsc --noEmit && biome check --write && adamhl8-knip",
+		"prepare": "find .githooks -type f -exec ln -srf {} .git/hooks/ \\; || true",
+		"prepublishOnly": "bun bundle",
+		"refresh-schema": "bun run refresh-schema.ts",
+		"render": "./scripts/render.sh",
+		"watch": "./scripts/watch.sh"
+	},
+	"dependencies": {
+		"@tabler/icons-react": "^3.35.0",
+		"react": "^19.1.1",
+		"react-dom": "^19.1.1",
+		"tailwindcss": "^4.1.13"
+	},
+	"devDependencies": {
+		"@adamhl8/configs": "^0.15.19",
+		"@arethetypeswrong/core": "^0.18.2",
+		"@biomejs/biome": "^2.2.4",
+		"@tailwindcss/cli": "^4.1.13",
+		"@types/bun": "latest",
+		"@types/react": "^19.1.13",
+		"@types/react-dom": "^19.1.9",
+		"@typescript/native-preview": "^7.0.0-dev.20250918.1",
+		"json-schema-to-typescript": "^15.0.4",
+		"knip": "^5.63.1",
+		"markdown-toc": "^1.2.0",
+		"publint": "^0.3.13",
+		"resumed": "^6.0.0",
+		"tsc-alias": "^1.8.16",
+		"tsdown": "^0.15.2",
+		"typescript": "^5.9.2"
+	}
 }
