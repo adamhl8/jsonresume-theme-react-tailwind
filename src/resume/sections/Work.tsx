@@ -27,9 +27,7 @@ const Work = () => {
                   </span>
                 )}
                 <span>|</span>
-                <span className="font-lighter italic">
-                  {job.startDate} - {job.endDate}
-                </span>
+                <span className="font-lighter italic">{`${job.startDate} - ${job.endDate}`}</span>
               </div>
             </header>
 

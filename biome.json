@@ -7,8 +7,21 @@
         "noArrayIndexKey": "off"
       },
       "nursery": {
-        "noShadow": "off"
+        "noShadow": "off",
+        "noJsxLiterals": "off"
       }
     }
-  }
+  },
+  "overrides": [
+    {
+      "includes": ["**/*.css"],
+      "linter": {
+        "rules": {
+          "suspicious": {
+            "noUnknownAtRules": "off"
+          }
+        }
+      }
+    }
+  ]
 }

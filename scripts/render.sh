@@ -2,7 +2,9 @@
 
 # The resumed cli resolves the theme from node_modules, so we have to build our theme and copy it into node_modules
 
-bun bundle
+echo "Building theme..."
+bun bundle >/dev/null
+
 rm -rf node_modules/jsonresume-theme-react-tailwind/
 mkdir -p node_modules/jsonresume-theme-react-tailwind/
 cp -r dist/ package.json node_modules/jsonresume-theme-react-tailwind/

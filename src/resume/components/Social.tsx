@@ -3,7 +3,7 @@ import { IconBrandGithubFilled, IconBrandLinkedinFilled, IconFileUnknown } from 
 
 import InfoTag from "@/resume/components/InfoTag.js"
 
-type Profiles = {
+interface Profiles {
   network?: string
   username?: string
   url?: string
@@ -19,7 +19,7 @@ const iconMap: Record<string, TablerIcon> = {
 }
 
 function Social({ profiles }: SocialProps) {
-  // biome-ignore lint/nursery/useIterableCallbackReturn: ignore
+  // biome-ignore lint/suspicious/useIterableCallbackReturn: ignore
   const profilesArray = profiles.map((profile, index) => {
     if (!(profile.network && profile.username && profile.url)) return
 

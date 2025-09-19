@@ -3,7 +3,7 @@ import { IconDownload } from "@tabler/icons-react"
 function PrintButton({ className }: { className?: string }) {
   return (
     <div className={className}>
-      {/** biome-ignore lint/nursery/useUniqueElementIds: needed for script */}
+      {/** biome-ignore lint/correctness/useUniqueElementIds: needed for script */}
       <button
         type="button"
         id="print-button"
