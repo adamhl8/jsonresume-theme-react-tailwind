@@ -1,10 +1,10 @@
 import { IconMailFilled, IconMapPinFilled, IconPhoneFilled, IconWorld } from "@tabler/icons-react"
 
-import { resume } from "@/index.js"
-import InfoTag from "@/resume/components/InfoTag.js"
-import Social from "@/resume/components/Social.js"
-import Title from "@/resume/components/Title.js"
-import { removeProtocol } from "@/utils.js"
+import { resume } from "~/index.js"
+import InfoTag from "~/resume/components/InfoTag.js"
+import Social from "~/resume/components/Social.js"
+import Title from "~/resume/components/Title.js"
+import { removeProtocol } from "~/utils.js"
 
 function About() {
   const { basics } = resume

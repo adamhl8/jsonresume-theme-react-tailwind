@@ -1,5 +1,5 @@
-import { resume } from "@/index.js"
-import Title from "@/resume/components/Title.js"
+import { resume } from "~/index.js"
+import Title from "~/resume/components/Title.js"
 
 function Skills() {
   const { skills } = resume

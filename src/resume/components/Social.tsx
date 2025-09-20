@@ -1,7 +1,7 @@
 import type { TablerIcon } from "@tabler/icons-react"
 import { IconBrandGithubFilled, IconBrandLinkedinFilled, IconFileUnknown } from "@tabler/icons-react"
 
-import InfoTag from "@/resume/components/InfoTag.js"
+import InfoTag from "~/resume/components/InfoTag.js"
 
 interface Profiles {
   network?: string

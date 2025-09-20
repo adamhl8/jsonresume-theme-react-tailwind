@@ -1,13 +1,13 @@
 import * as fs from "node:fs"
 import * as path from "node:path"
 
-import { resume } from "@/index.js"
-import PrintButton from "@/resume/components/PrintButton.js"
-import About from "@/resume/sections/About.js"
-import Education from "@/resume/sections/Education.js"
-import Projects from "@/resume/sections/Projects.js"
-import Skills from "@/resume/sections/Skills.js"
-import Work from "@/resume/sections/Work.js"
+import { resume } from "~/index.js"
+import PrintButton from "~/resume/components/PrintButton.js"
+import About from "~/resume/sections/About.js"
+import Education from "~/resume/sections/Education.js"
+import Projects from "~/resume/sections/Projects.js"
+import Skills from "~/resume/sections/Skills.js"
+import Work from "~/resume/sections/Work.js"
 
 const css = fs.readFileSync(path.join(import.meta.dirname, "global.css"), "utf-8")
 
