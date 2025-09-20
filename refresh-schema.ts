@@ -1,4 +1,4 @@
-import * as fs from "node:fs/promises"
+import fs from "node:fs/promises"
 import { compileFromFile } from "json-schema-to-typescript"
 
 const response = await fetch("https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json")
