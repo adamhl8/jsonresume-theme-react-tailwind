@@ -1,6 +1,6 @@
-import { resume } from "~/index.js"
-import Title from "~/resume/components/Title.js"
-import { removeProtocol } from "~/utils.js"
+import { resume } from "~/index.ts"
+import Title from "~/resume/components/Title.ts"
+import { removeProtocol } from "~/utils.ts"
 
 const Projects = () => {
   const { projects } = resume
