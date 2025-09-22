@@ -1,12 +1,12 @@
 import { IconMailFilled, IconMapPinFilled, IconPhoneFilled, IconWorld } from "@tabler/icons-react"
 
-import { resume } from "~/index.ts"
-import InfoTag from "~/resume/components/InfoTag.ts"
-import Social from "~/resume/components/Social.ts"
-import Title from "~/resume/components/Title.ts"
+import type { ResumeSchema } from "~/ResumeSchema.d.ts"
+import InfoTag from "~/resume/components/InfoTag.tsx"
+import Social from "~/resume/components/Social.tsx"
+import Title from "~/resume/components/Title.tsx"
 import { removeProtocol } from "~/utils.ts"
 
-function About() {
+function About({ resume }: { resume: ResumeSchema }) {
   const { basics } = resume
   if (!basics) return
 

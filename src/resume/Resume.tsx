@@ -1,17 +1,21 @@
 import fs from "node:fs"
 import path from "node:path"
 
-import { resume } from "~/index.ts"
-import PrintButton from "~/resume/components/PrintButton.ts"
-import About from "~/resume/sections/About.ts"
-import Education from "~/resume/sections/Education.ts"
-import Projects from "~/resume/sections/Projects.ts"
-import Skills from "~/resume/sections/Skills.ts"
-import Work from "~/resume/sections/Work.ts"
+import type { ResumeSchema } from "~/ResumeSchema.d.ts"
+import PrintButton from "~/resume/components/PrintButton.tsx"
+import About from "~/resume/sections/About.tsx"
+import Education from "~/resume/sections/Education.tsx"
+import Projects from "~/resume/sections/Projects.tsx"
+import Skills from "~/resume/sections/Skills.tsx"
+import Work from "~/resume/sections/Work.tsx"
 
 const css = fs.readFileSync(path.join(import.meta.dirname, "global.css"), "utf-8")
 
-function Resume() {
+interface ResumeProps {
+  resume: ResumeSchema
+}
+
+export function Resume({ resume }: ResumeProps) {
   const { basics } = resume
   if (!basics) return
 
@@ -35,13 +39,13 @@ function Resume() {
 
           <div className="mt-4 grid grid-cols-7 space-x-4">
             <section className="col-span-2 space-y-6">
-              <About />
-              <Education />
-              <Skills />
+              <About resume={resume} />
+              <Education resume={resume} />
+              <Skills resume={resume} />
             </section>
             <section className="col-span-5 space-y-4">
-              <Work />
-              <Projects />
+              <Work resume={resume} />
+              <Projects resume={resume} />
             </section>
           </div>
         </main>
@@ -49,5 +53,3 @@ function Resume() {
     </html>
   )
 }
-
-export { Resume }

@@ -1,8 +1,8 @@
-import { resume } from "~/index.ts"
-import Title from "~/resume/components/Title.ts"
+import type { ResumeSchema } from "~/ResumeSchema.d.ts"
+import Title from "~/resume/components/Title.tsx"
 import { removeProtocol } from "~/utils.ts"
 
-const Work = () => {
+const Work = ({ resume }: { resume: ResumeSchema }) => {
   const { work } = resume
   if (!work || work.length === 0) return
 

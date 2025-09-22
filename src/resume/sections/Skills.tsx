@@ -1,7 +1,7 @@
-import { resume } from "~/index.ts"
-import Title from "~/resume/components/Title.ts"
+import type { ResumeSchema } from "~/ResumeSchema.d.ts"
+import Title from "~/resume/components/Title.tsx"
 
-function Skills() {
+function Skills({ resume }: { resume: ResumeSchema }) {
   const { skills } = resume
   if (!skills || skills.length === 0) return
 
