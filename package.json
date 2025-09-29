@@ -41,19 +41,19 @@
     "tailwindcss": "^4.1.13"
   },
   "devDependencies": {
-    "@adamhl8/configs": "^0.17.2",
+    "@adamhl8/configs": "^0.17.5",
     "@arethetypeswrong/core": "^0.18.2",
     "@biomejs/biome": "^2.2.4",
     "@tailwindcss/cli": "^4.1.13",
     "@types/bun": "latest",
-    "@types/react": "^19.1.13",
+    "@types/react": "^19.1.15",
     "@types/react-dom": "^19.1.9",
     "json-schema-to-typescript": "^15.0.4",
-    "knip": "^5.64.0",
+    "knip": "^5.64.1",
     "markdown-toc": "^1.2.0",
     "publint": "^0.3.13",
     "resumed": "^6.1.0",
-    "tsdown": "^0.15.4",
+    "tsdown": "^0.15.5",
     "typescript": "^5.9.2"
   }
 }
