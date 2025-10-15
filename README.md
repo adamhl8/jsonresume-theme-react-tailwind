@@ -2,14 +2,14 @@
 
 This is a [JSON Resume](https://jsonresume.org) theme based on the [Macchiato theme](https://github.com/biosan/jsonresume-theme-macchiato).
 
+<img width="450" alt="example" src="https://github.com/user-attachments/assets/e0785072-dab1-4f85-a7fb-e4c4fce4be18" />
+
 It's built using TypeScript/React/Tailwind to provide a more modern and streamlined development experience.
 
 > [!IMPORTANT]
 > This project is intended to be forked and used as a starting point for building your own theme. As such, it currently only supports a small subset of the JSON Resume schema.
 
 I use this for my own resume which you can see here: **[https://adamhl.dev/resume](https://adamhl.dev/resume/)**
-
-<img width="450" alt="example" src="https://github.com/user-attachments/assets/e0785072-dab1-4f85-a7fb-e4c4fce4be18" />
 
 ## Why?
 
