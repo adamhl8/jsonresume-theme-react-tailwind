@@ -36,24 +36,24 @@
   },
   "dependencies": {
     "@tabler/icons-react": "^3.35.0",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "tailwindcss": "^4.1.13"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwindcss": "^4.1.15"
   },
   "devDependencies": {
-    "@adamhl8/configs": "^0.17.5",
+    "@adamhl8/configs": "^0.17.7",
     "@arethetypeswrong/core": "^0.18.2",
-    "@biomejs/biome": "^2.2.4",
-    "@tailwindcss/cli": "^4.1.13",
+    "@biomejs/biome": "^2.2.7",
+    "@tailwindcss/cli": "^4.1.15",
     "@types/bun": "latest",
-    "@types/react": "^19.1.15",
-    "@types/react-dom": "^19.1.9",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
     "json-schema-to-typescript": "^15.0.4",
-    "knip": "^5.64.1",
+    "knip": "^5.66.2",
     "markdown-toc": "^1.2.0",
-    "publint": "^0.3.13",
+    "publint": "^0.3.15",
     "resumed": "^6.1.0",
-    "tsdown": "^0.15.5",
-    "typescript": "^5.9.2"
+    "tsdown": "^0.15.9",
+    "typescript": "^5.9.3"
   }
 }
