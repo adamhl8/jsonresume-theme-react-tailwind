@@ -1,7 +1,7 @@
 import fs from "node:fs"
 import path from "node:path"
 
-import type { ResumeSchema } from "~/ResumeSchema.d.ts"
+import type { ResumeSchema } from "~/ResumeSchema.extended.ts"
 import PrintButton from "~/resume/components/PrintButton.tsx"
 import About from "~/resume/sections/About.tsx"
 import Education from "~/resume/sections/Education.tsx"
@@ -34,11 +34,13 @@ export function Resume({ resume }: ResumeProps) {
         <main className="w-[815px] p-12 shadow-[0_0_25px_rgba(0,0,0,0.25)] print:w-full print:p-0 print:shadow-none">
           <div className="mb-4 border-secondary border-t-8" />
 
-          <h1 className="font-bold text-4xl/tight">{basics.name}</h1>
-          <h2 className="font-bold text-lg/tight text-secondary">{basics.label}</h2>
-
           <div className="mt-4 grid grid-cols-7 space-x-4">
             <section className="col-span-2 space-y-6">
+              <div>
+                <h1 className="font-bold text-2xl/tight">{basics.name}</h1>
+                <h2 className="font-bold text-base/tight text-secondary">{basics.label}</h2>
+              </div>
+
               <About resume={resume} />
               <Education resume={resume} />
               <Skills resume={resume} />

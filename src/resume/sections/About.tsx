@@ -1,6 +1,6 @@
 import { IconMailFilled, IconMapPinFilled, IconPhoneFilled, IconWorld } from "@tabler/icons-react"
 
-import type { ResumeSchema } from "~/ResumeSchema.d.ts"
+import type { ResumeSchema } from "~/ResumeSchema.extended.ts"
 import InfoTag from "~/resume/components/InfoTag.tsx"
 import Social from "~/resume/components/Social.tsx"
 import Title from "~/resume/components/Title.tsx"

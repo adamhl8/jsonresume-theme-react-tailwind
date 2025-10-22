@@ -1,4 +1,4 @@
-import type { ResumeSchema } from "~/ResumeSchema.d.ts"
+import type { ResumeSchema } from "~/ResumeSchema.extended.ts"
 import Title from "~/resume/components/Title.tsx"
 
 function Skills({ resume }: { resume: ResumeSchema }) {

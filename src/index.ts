@@ -1,6 +1,6 @@
 import { renderToStaticMarkup } from "react-dom/server"
 
-import type { ResumeSchema } from "~/ResumeSchema.d.ts"
+import type { ResumeSchema } from "~/ResumeSchema.extended.ts"
 import { Resume } from "~/resume/Resume.tsx"
 
 function render(resumeJSON: ResumeSchema): string {
