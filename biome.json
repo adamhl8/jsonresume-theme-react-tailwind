@@ -5,10 +5,6 @@
     "rules": {
       "suspicious": {
         "noArrayIndexKey": "off"
-      },
-      "nursery": {
-        "noShadow": "off",
-        "noJsxLiterals": "off"
       }
     }
   },

@@ -4,7 +4,7 @@ import type { ResumeSchema } from "~/ResumeSchema.extended.ts"
 import Title from "~/resume/components/Title.tsx"
 import { removeProtocol } from "~/utils.ts"
 
-const Projects = ({ resume }: { resume: ResumeSchema }) => {
+function Projects({ resume }: { resume: ResumeSchema }) {
   const { projects } = resume
   if (!projects || projects.length === 0) return
 
@@ -18,29 +18,30 @@ const Projects = ({ resume }: { resume: ResumeSchema }) => {
             <header className="flex items-center space-x-1.5">
               <span className="font-bold text-md/tight">{project.name}</span>
               <span className="flex items-center space-x-1.5 font-lighter text-[dimgray] text-xs/tight">
-                {project.url && (
+                {project.url ? (
                   <>
                     <span>&#8226;</span>
                     <a href={project.url} target="_blank" rel="noreferrer">
                       {removeProtocol(project.url)}
                     </a>
                   </>
-                )}
+                ) : null}
 
-                {project.stars && (
+                {project.stars ? (
                   <>
                     <span>&#8226;</span>
                     <span className="inline-flex items-center">
                       <IconStar size={12} className="mr-0.5" /> {project.stars}
                     </span>
                   </>
-                )}
+                ) : null}
               </span>
             </header>
 
             <div className="space-y-2">
               {project.keywords && project.keywords.length > 0 && (
                 <div>
+                  {/** biome-ignore lint/suspicious/noShadow: shadowing is fine here */}
                   {project.keywords.map((keyword, index) => (
                     <span
                       key={index}
@@ -52,7 +53,7 @@ const Projects = ({ resume }: { resume: ResumeSchema }) => {
                 </div>
               )}
 
-              {project.description && <p className="text-smaller/3.5">{project.description}</p>}
+              {project.description ? <p className="text-smaller/3.5">{project.description}</p> : null}
             </div>
           </div>
         ))}

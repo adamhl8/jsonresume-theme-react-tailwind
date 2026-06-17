@@ -24,11 +24,11 @@ function About({ resume }: { resume: ResumeSchema }) {
     <div>
       <Title title="About" />
 
-      {basics.location && <InfoTag text={location} Icon={IconMapPinFilled} />}
-      {basics.email && <InfoTag text={basics.email} url={`mailto:${basics.email}`} Icon={IconMailFilled} />}
-      {basics.phone && <InfoTag text={basics.phone} url={`tel:${basics.phone}`} Icon={IconPhoneFilled} />}
-      {basics.profiles && <Social profiles={basics.profiles} />}
-      {basics.url && <InfoTag text={removeProtocol(basics.url)} url={basics.url} Icon={IconWorld} />}
+      {basics.location ? <InfoTag text={location} Icon={IconMapPinFilled} /> : null}
+      {basics.email ? <InfoTag text={basics.email} url={`mailto:${basics.email}`} Icon={IconMailFilled} /> : null}
+      {basics.phone ? <InfoTag text={basics.phone} url={`tel:${basics.phone}`} Icon={IconPhoneFilled} /> : null}
+      {basics.profiles ? <Social profiles={basics.profiles} /> : null}
+      {basics.url ? <InfoTag text={removeProtocol(basics.url)} url={basics.url} Icon={IconWorld} /> : null}
     </div>
   )
 }

@@ -9,10 +9,11 @@ function Skills({ resume }: { resume: ResumeSchema }) {
     <div className="space-y-6">
       {skills.map((skill, index) => (
         <div key={index}>
-          {skill.name && <Title title={skill.name} />}
+          {skill.name ? <Title title={skill.name} /> : null}
 
           {skill.keywords && skill.keywords.length > 0 && (
             <div className="flex flex-wrap">
+              {/** biome-ignore lint/suspicious/noShadow: shadowing is fine here */}
               {skill.keywords.map((keyword, index) => (
                 <span key={index} className="m-[0.15rem] rounded-sm bg-[ghostwhite] p-[0.15rem] text-sm/tight">
                   {keyword}

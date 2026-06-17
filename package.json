@@ -27,7 +27,7 @@
   "keywords": ["jsonresume", "jsonresume-theme"],
   "scripts": {
     "bundle": "bun lint && tsdown",
-    "lint": "markdown-toc -i --bullets '-' --maxdepth 3 ./README.md && ts-import-fix -w && tsc --noEmit && biome check --write && adamhl8-knip",
+    "lint": "markdown-toc -i --bullets '-' --maxdepth 3 ./README.md && tsc --noEmit && biome check --write && adamhl8-knip",
     "prepare": "find .githooks -type f -exec ln -srf {} .git/hooks/ \\; || true",
     "prepublishOnly": "bun bundle",
     "refresh-schema": "bun run refresh-schema.ts",
@@ -35,25 +35,25 @@
     "watch": "./scripts/watch.sh"
   },
   "dependencies": {
-    "@tabler/icons-react": "^3.35.0",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "tailwindcss": "^4.1.15"
+    "@tabler/icons-react": "^3.44.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "tailwindcss": "^4.3.1"
   },
   "devDependencies": {
-    "@adamhl8/configs": "^0.17.7",
-    "@arethetypeswrong/core": "^0.18.2",
-    "@biomejs/biome": "^2.2.7",
-    "@tailwindcss/cli": "^4.1.15",
+    "@adamhl8/configs": "^0.19.6",
+    "@arethetypeswrong/core": "^0.18.3",
+    "@biomejs/biome": "^2.5.0",
+    "@tailwindcss/cli": "^4.3.1",
     "@types/bun": "latest",
-    "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
     "json-schema-to-typescript": "^15.0.4",
-    "knip": "^5.66.2",
+    "knip": "^6.17.1",
     "markdown-toc": "^1.2.0",
-    "publint": "^0.3.15",
+    "publint": "^0.3.21",
     "resumed": "^6.1.0",
-    "tsdown": "^0.15.9",
-    "typescript": "^5.9.3"
+    "tsdown": "^0.22.3",
+    "typescript": "^6.0.3"
   }
 }

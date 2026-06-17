@@ -14,11 +14,11 @@ function Education({ resume }: { resume: ResumeSchema }) {
           <div key={index}>
             <div className="text-md/tight">{entry.institution}</div>
 
-            {entry.studyType && entry.area && (
+            {entry.studyType && entry.area ? (
               <div className="font-bold text-secondary text-sm/tight">
                 {entry.studyType} in {entry.area}
               </div>
-            )}
+            ) : null}
 
             {entry.score ? (
               <div className="font-lighter text-sm/tight italic">GPA: {entry.score}</div>

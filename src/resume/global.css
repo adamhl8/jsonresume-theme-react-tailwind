@@ -3,8 +3,8 @@
 
 @theme {
   --font-sans: "Source Sans 3", Helvetica, Arial, sans-serif;
-  --color-primary: #39424b;
-  --color-secondary: #56817a;
+  --color-primary: rgb(57 66 75);
+  --color-secondary: rgb(86 129 122);
   --font-weight-lighter: 350;
   --font-weight-semimedium: 450;
 
