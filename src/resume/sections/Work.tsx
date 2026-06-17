@@ -27,7 +27,7 @@ function Work({ resume }: { resume: ResumeSchema }) {
                   </span>
                 ) : null}
                 <span>|</span>
-                <span className="font-lighter italic">{`${job.startDate} - ${job.endDate}`}</span>
+                <span className="font-lighter italic">{`${job.startDate} - ${job.endDate ?? "Present"}`}</span>
               </div>
             </header>
 
