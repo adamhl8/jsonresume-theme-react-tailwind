@@ -1,10 +1,11 @@
 import { renderToStaticMarkup } from "react-dom/server"
 
-import type { ResumeSchema } from "~/ResumeSchema.extended.ts"
-import { Resume } from "~/resume/Resume.tsx"
+import { Resume } from "#/resume/Resume.tsx"
+import type { ResumeSchema } from "#/ResumeSchema.extended.ts"
 
-function render(resumeJSON: ResumeSchema): string {
+const render = (resumeJSON: ResumeSchema): string => {
   const resume = resumeJSON
+  // oxlint-disable-next-line new-cap
   let markup = renderToStaticMarkup(Resume({ resume }))
   markup = `<!doctype html>\n${markup}`
   return markup

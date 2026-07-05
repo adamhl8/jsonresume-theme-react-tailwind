@@ -1,7 +1,7 @@
-import type { ResumeSchema } from "~/ResumeSchema.extended.ts"
-import Title from "~/resume/components/Title.tsx"
+import { Title } from "#/resume/components/Title.tsx"
+import type { ResumeSchema } from "#/ResumeSchema.extended.ts"
 
-function Skills({ resume }: { resume: ResumeSchema }) {
+export const Skills = ({ resume }: { resume: ResumeSchema }) => {
   const { skills } = resume
   if (!skills || skills.length === 0) return
 
@@ -9,13 +9,12 @@ function Skills({ resume }: { resume: ResumeSchema }) {
     <div className="space-y-6">
       {skills.map((skill, index) => (
         <div key={index}>
-          {skill.name ? <Title title={skill.name} /> : null}
+          {skill.name ? <Title title={skill.name} /> : undefined}
 
           {skill.keywords && skill.keywords.length > 0 && (
             <div className="flex flex-wrap">
-              {/** biome-ignore lint/suspicious/noShadow: shadowing is fine here */}
-              {skill.keywords.map((keyword, index) => (
-                <span key={index} className="m-[0.15rem] rounded-sm bg-[ghostwhite] p-[0.15rem] text-sm/tight">
+              {skill.keywords.map((keyword, keywordIndex) => (
+                <span key={keywordIndex} className="m-[0.15rem] rounded-sm bg-[ghostwhite] p-[0.15rem] text-sm/tight">
                   {keyword}
                 </span>
               ))}
@@ -26,5 +25,3 @@ function Skills({ resume }: { resume: ResumeSchema }) {
     </div>
   )
 }
-
-export default Skills

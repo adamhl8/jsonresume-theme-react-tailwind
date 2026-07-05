@@ -1,57 +1,64 @@
 {
   "name": "jsonresume-theme-react-tailwind",
   "version": "1.3.1",
-  "type": "module",
   "description": "A JSON Resume theme built with React and Tailwind.",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/adamhl8/jsonresume-theme-react-tailwind.git"
-  },
+  "keywords": [
+    "jsonresume",
+    "jsonresume-theme"
+  ],
   "homepage": "https://github.com/adamhl8/jsonresume-theme-react-tailwind",
   "bugs": {
     "url": "https://github.com/adamhl8/jsonresume-theme-react-tailwind/issues"
   },
+  "license": "MIT",
   "author": {
-    "email": "adamhl@pm.me",
     "name": "Adam Langbert",
+    "email": "adamhl@pm.me",
     "url": "https://github.com/adamhl8"
   },
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamhl8/jsonresume-theme-react-tailwind.git"
+  },
+  "files": [
+    "dist/"
+  ],
+  "type": "module",
+  "imports": {
+    "#/*": "./src/*"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist/"],
-  "keywords": ["jsonresume", "jsonresume-theme"],
   "scripts": {
-    "bundle": "bun lint && tsdown",
-    "lint": "markdown-toc -i --bullets '-' --maxdepth 3 ./README.md && tsc --noEmit && biome check --write && adamhl8-knip",
-    "prepare": "find .githooks -type f -exec ln -srf {} .git/hooks/ \\; || true",
-    "prepublishOnly": "bun bundle",
-    "refresh-schema": "bun run refresh-schema.ts",
-    "render": "./scripts/render.sh",
-    "watch": "./scripts/watch.sh"
+    "prepare": "just prepare"
   },
   "dependencies": {
     "@tabler/icons-react": "^3.44.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
-    "tailwindcss": "^4.3.1"
+    "tailwindcss": "^4.3.2"
   },
   "devDependencies": {
-    "@adamhl8/configs": "^0.19.6",
-    "@arethetypeswrong/core": "^0.18.3",
-    "@biomejs/biome": "^2.5.0",
-    "@tailwindcss/cli": "^4.3.1",
-    "@types/bun": "latest",
+    "@adamhl8/configs": "^0.31.0",
+    "@arethetypeswrong/core": "^0.18.4",
+    "@commitlint/cli": "^21.2.0",
+    "@commitlint/config-conventional": "^21.2.0",
+    "@tailwindcss/cli": "^4.3.2",
+    "@types/node": "^26.1.0",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "json-schema-to-typescript": "^15.0.4",
-    "knip": "^6.17.1",
+    "knip": "^6.24.0",
     "markdown-toc": "^1.2.0",
+    "oxfmt": "^0.57.0",
+    "oxlint": "^1.72.0",
+    "oxlint-tsgolint": "^0.24.0",
     "publint": "^0.3.21",
+    "release-it": "^20.2.1",
     "resumed": "^6.1.0",
     "tsdown": "^0.22.3",
     "typescript": "^6.0.3"

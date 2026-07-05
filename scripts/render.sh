@@ -1,12 +1,7 @@
 #!/bin/sh
 
-# The resumed cli resolves the theme from node_modules, so we have to build our theme and copy it into node_modules
-
 echo "Building theme..."
-bun tsdown >/dev/null
+nubx tsdown >/dev/null
 
-rm -rf node_modules/jsonresume-theme-react-tailwind/
-mkdir -p node_modules/jsonresume-theme-react-tailwind/
-cp -r dist/ package.json node_modules/jsonresume-theme-react-tailwind/
-
-bun resumed render resume.json -t jsonresume-theme-react-tailwind
+# resumed imports the theme relative to its own module, so pass an absolute path
+nubx resumed render resume.json -t "$PWD/dist/index.js"

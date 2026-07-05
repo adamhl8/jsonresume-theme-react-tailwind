@@ -1,3 +1,1 @@
-export function removeProtocol(url: string) {
-  return url.replace(/.*?:\/\//gu, "")
-}
+export const removeProtocol = (url: string) => url.replaceAll(/.*?:\/\//gv, "")

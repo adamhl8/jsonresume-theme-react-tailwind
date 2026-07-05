@@ -1,7 +1,7 @@
 import type { TablerIcon } from "@tabler/icons-react"
 import { IconBrandGithubFilled, IconBrandLinkedinFilled, IconFileUnknown } from "@tabler/icons-react"
 
-import InfoTag from "~/resume/components/InfoTag.tsx"
+import { InfoTag } from "#/resume/components/InfoTag.tsx"
 
 interface Profiles {
   network?: string
@@ -18,10 +18,9 @@ const iconMap: Record<string, TablerIcon> = {
   linkedin: IconBrandLinkedinFilled,
 }
 
-function Social({ profiles }: SocialProps) {
-  // biome-ignore lint/suspicious/useIterableCallbackReturn: ignore
-  const profilesArray = profiles.map((profile, index) => {
-    if (!(profile.network && profile.username && profile.url)) return
+export const Social = ({ profiles }: SocialProps) => {
+  const profilesArray = profiles.flatMap((profile, index) => {
+    if (!(profile.network && profile.username && profile.url)) return []
 
     return (
       <InfoTag
@@ -34,5 +33,3 @@ function Social({ profiles }: SocialProps) {
   })
   return profilesArray
 }
-
-export default Social
