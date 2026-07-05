@@ -4,7 +4,6 @@ import { defineConfig } from "oxlint"
 const config = oxlintConfig({
   rules: {
     "react/no-array-index-key": "off",
-    "typescript/no-unsafe-assignment": "off",
   },
 })
 
