@@ -1,13 +1,10 @@
-import fs from "node:fs/promises"
-
 import { compileFromFile } from "json-schema-to-typescript"
 
 const response = await fetch("https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json")
 const rawSchema = await response.text()
-await fs.mkdir("./tmp/", { recursive: true })
-await fs.writeFile("./tmp/schema.json", rawSchema)
+await Bun.write("./tmp/schema.json", rawSchema)
 
 const schema = await compileFromFile("./tmp/schema.json", { bannerComment: "", maxItems: -1 })
-await fs.writeFile("./src/ResumeSchema.d.ts", schema)
+await Bun.write("./src/ResumeSchema.d.ts", schema)
 
-await fs.rm("./tmp/", { force: true, recursive: true })
+await Bun.$`rm -rf ./tmp/`

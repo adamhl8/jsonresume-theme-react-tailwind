@@ -1,10 +1,10 @@
 import { IconMailFilled, IconMapPinFilled, IconPhoneFilled, IconWorld } from "@tabler/icons-react"
 
-import { InfoTag } from "#/resume/components/InfoTag.tsx"
-import { Social } from "#/resume/components/Social.tsx"
-import { Title } from "#/resume/components/Title.tsx"
-import type { ResumeSchema } from "#/ResumeSchema.extended.ts"
-import { removeProtocol } from "#/utils.ts"
+import { InfoTag } from "#resume/components/InfoTag.tsx"
+import { Social } from "#resume/components/Social.tsx"
+import { Title } from "#resume/components/Title.tsx"
+import type { ResumeSchema } from "#ResumeSchema.extended.ts"
+import { removeProtocol } from "#utils.ts"
 
 export const About = ({ resume }: { resume: ResumeSchema }) => {
   const { basics } = resume

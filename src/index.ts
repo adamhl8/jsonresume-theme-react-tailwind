@@ -1,7 +1,7 @@
 import { renderToStaticMarkup } from "react-dom/server"
 
-import { Resume } from "#/resume/Resume.tsx"
-import type { ResumeSchema } from "#/ResumeSchema.extended.ts"
+import { Resume } from "#resume/Resume.tsx"
+import type { ResumeSchema } from "#ResumeSchema.extended.ts"
 
 const render = (resumeJSON: ResumeSchema): string => {
   const resume = resumeJSON

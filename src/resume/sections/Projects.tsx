@@ -1,8 +1,8 @@
 import { IconStar } from "@tabler/icons-react"
 
-import { Title } from "#/resume/components/Title.tsx"
-import type { ResumeSchema } from "#/ResumeSchema.extended.ts"
-import { removeProtocol } from "#/utils.ts"
+import { Title } from "#resume/components/Title.tsx"
+import type { ResumeSchema } from "#ResumeSchema.extended.ts"
+import { removeProtocol } from "#utils.ts"
 
 export const Projects = ({ resume }: { resume: ResumeSchema }) => {
   const { projects } = resume

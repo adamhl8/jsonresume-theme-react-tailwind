@@ -1,13 +1,13 @@
 import fs from "node:fs"
 import path from "node:path"
 
-import { PrintButton } from "#/resume/components/PrintButton.tsx"
-import { About } from "#/resume/sections/About.tsx"
-import { Education } from "#/resume/sections/Education.tsx"
-import { Projects } from "#/resume/sections/Projects.tsx"
-import { Skills } from "#/resume/sections/Skills.tsx"
-import { Work } from "#/resume/sections/Work.tsx"
-import type { ResumeSchema } from "#/ResumeSchema.extended.ts"
+import { PrintButton } from "#resume/components/PrintButton.tsx"
+import { About } from "#resume/sections/About.tsx"
+import { Education } from "#resume/sections/Education.tsx"
+import { Projects } from "#resume/sections/Projects.tsx"
+import { Skills } from "#resume/sections/Skills.tsx"
+import { Work } from "#resume/sections/Work.tsx"
+import type { ResumeSchema } from "#ResumeSchema.extended.ts"
 
 const css = fs.readFileSync(path.join(import.meta.dirname, "global.css"), "utf8")
 const styleHtml = { __html: css }

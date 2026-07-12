@@ -1,7 +1,7 @@
 import "node_modules/@adamhl8/configs/dist/configs/justfile.base.just"
 
 refresh-schema:
-    nub refresh-schema.ts
+    bun refresh-schema.ts
 
 build: refresh-schema _build
 

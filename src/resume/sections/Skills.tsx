@@ -1,5 +1,5 @@
-import { Title } from "#/resume/components/Title.tsx"
-import type { ResumeSchema } from "#/ResumeSchema.extended.ts"
+import { Title } from "#resume/components/Title.tsx"
+import type { ResumeSchema } from "#ResumeSchema.extended.ts"
 
 export const Skills = ({ resume }: { resume: ResumeSchema }) => {
   const { skills } = resume

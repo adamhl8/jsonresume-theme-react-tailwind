@@ -1,4 +1,4 @@
-import type { ResumeSchema as BaseResumeSchema } from "#/ResumeSchema.d.ts"
+import type { ResumeSchema as BaseResumeSchema } from "#ResumeSchema.d.ts"
 
 type BaseProject = NonNullable<BaseResumeSchema["projects"]>[number]
 

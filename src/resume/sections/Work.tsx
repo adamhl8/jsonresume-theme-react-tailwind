@@ -1,6 +1,6 @@
-import { Title } from "#/resume/components/Title.tsx"
-import type { ResumeSchema } from "#/ResumeSchema.extended.ts"
-import { removeProtocol } from "#/utils.ts"
+import { Title } from "#resume/components/Title.tsx"
+import type { ResumeSchema } from "#ResumeSchema.extended.ts"
+import { removeProtocol } from "#utils.ts"
 
 export const Work = ({ resume }: { resume: ResumeSchema }) => {
   const { work } = resume
