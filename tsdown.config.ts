@@ -4,7 +4,6 @@ import { defineConfig } from "tsdown"
 
 const config = tsdownConfig({
   platform: "node",
-  failOnWarn: false,
   hooks: {
     "build:done": async () => {
       await $`bun tailwindcss -i ./src/resume/global.css -o ./dist/resume/global.css`
