@@ -1,3 +1,11 @@
+## [1.3.4](https://github.com/adamhl8/jsonresume-theme-react-tailwind/compare/v1.3.3..v1.3.4) - 2026-10-26
+
+### ⚙️ Miscellaneous Tasks
+
+- _(deps)_ update dependencies ([4675e2b](https://github.com/adamhl8/jsonresume-theme-react-tailwind/commit/4675e2b8acf9b0d3f21d8f773cdda8afcdd06d59) by @adamhl8)
+
+- _(tsdown)_ remove failOnWarn override ([e77d020](https://github.com/adamhl8/jsonresume-theme-react-tailwind/commit/e77d02049d7b3be090e74d52b73e2c57b89a4e2b) by @adamhl8)
+
 ## [1.3.3](https://github.com/adamhl8/jsonresume-theme-react-tailwind/compare/v1.3.2..v1.3.3) - 2026-07-13
 
 ### ⚙️ Miscellaneous Tasks
