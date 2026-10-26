@@ -1,7 +1,7 @@
 import { Title } from "#resume/components/Title.tsx"
 import type { ResumeSchema } from "#ResumeSchema.extended.ts"
 
-export const Education = ({ resume }: { resume: ResumeSchema }) => {
+export function Education({ resume }: { resume: ResumeSchema }) {
   const { education } = resume
   if (!education || education.length === 0) return
 
@@ -15,15 +15,15 @@ export const Education = ({ resume }: { resume: ResumeSchema }) => {
             <div className="text-md/tight">{entry.institution}</div>
 
             {entry.studyType && entry.area ? (
-              <div className="text-secondary text-sm/tight font-bold">
+              <div className="text-sm/tight font-bold text-secondary">
                 {entry.studyType} in {entry.area}
               </div>
             ) : undefined}
 
             {entry.score ? (
-              <div className="font-lighter text-sm/tight italic">GPA: {entry.score}</div>
+              <div className="text-sm/tight font-lighter italic">GPA: {entry.score}</div>
             ) : (
-              <div className="font-lighter text-sm/tight italic">in progress</div>
+              <div className="text-sm/tight font-lighter italic">in progress</div>
             )}
           </div>
         ))}

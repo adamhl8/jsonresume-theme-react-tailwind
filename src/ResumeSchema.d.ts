@@ -56,7 +56,11 @@ export interface ResumeSchema {
     endDate?: Iso8601
     /** Give an overview of your responsibilities at the company */
     summary?: string
-    /** Specify multiple accomplishments */
+    /**
+     * Specify multiple accomplishments
+     *
+     * Items: e.g. Increased profits by 20% from 2011-2012 through viral advertising
+     */
     highlights?: string[]
     [k: string]: unknown
   }[]
@@ -71,7 +75,11 @@ export interface ResumeSchema {
     endDate?: Iso8601
     /** Give an overview of your responsibilities at the company */
     summary?: string
-    /** Specify accomplishments and achievements */
+    /**
+     * Specify accomplishments and achievements
+     *
+     * Items: e.g. Increased profits by 20% from 2011-2012 through viral advertising
+     */
     highlights?: string[]
     [k: string]: unknown
   }[]
@@ -88,7 +96,11 @@ export interface ResumeSchema {
     endDate?: Iso8601
     /** Grade point average, e.g. 3.67/4.0 */
     score?: string
-    /** List notable courses/subjects */
+    /**
+     * List notable courses/subjects
+     *
+     * Items: e.g. H1302 - Introduction to American history
+     */
     courses?: string[]
     [k: string]: unknown
   }[]
@@ -133,7 +145,11 @@ export interface ResumeSchema {
     name?: string
     /** E.g. Master */
     level?: string
-    /** List some keywords pertaining to this skill */
+    /**
+     * List some keywords pertaining to this skill
+     *
+     * Items: e.g. HTML
+     */
     keywords?: string[]
     [k: string]: unknown
   }[]
@@ -148,6 +164,7 @@ export interface ResumeSchema {
   interests?: {
     /** E.g. Philosophy */
     name?: string
+    /** Items: e.g. Friedrich Nietzsche */
     keywords?: string[]
     [k: string]: unknown
   }[]
@@ -168,15 +185,27 @@ export interface ResumeSchema {
     name?: string
     /** Short summary of project. e.g. Collated works of 2017. */
     description?: string
-    /** Specify multiple features */
+    /**
+     * Specify multiple features
+     *
+     * Items: e.g. Directs you close but not quite there
+     */
     highlights?: string[]
-    /** Specify special elements involved */
+    /**
+     * Specify special elements involved
+     *
+     * Items: e.g. AngularJS
+     */
     keywords?: string[]
     startDate?: Iso8601
     endDate?: Iso8601
     /** E.g. http://www.computer.org/csdl/mags/co/1996/10/rx069-abs.html */
     url?: string
-    /** Specify your role on this project or in company */
+    /**
+     * Specify your role on this project or in company
+     *
+     * Items: e.g. Team Lead, Speaker, Writer
+     */
     roles?: string[]
     /** Specify the relevant company/entity affiliations e.g. 'greenpeace', 'corporationXYZ' */
     entity?: string

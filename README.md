@@ -37,7 +37,7 @@ This project includes [resumed](https://github.com/rbardini/resumed) as a dev de
 
 4. Generate your resume
    ```sh
-   bun render
+   bunx bask render
    ```
 
 Your resume will be saved to `resume.html`.
@@ -51,10 +51,10 @@ Your resume will be saved to `resume.html`.
 
 ### Watch Mode
 
-For a better development experience, you can run `bun watch` to automatically regenerate the `resume.html` file whenever you make changes to `resume.json` or anything in the `src` directory.
+For a better development experience, you can run `bunx bask watch` to automatically regenerate the `resume.html` file whenever you make changes to `resume.json` or anything in the `src` directory.
 
 1. Install [watchexec](https://github.com/watchexec/watchexec/tree/main?tab=readme-ov-file#install)
-2. Run `bun watch`
+2. Run `bunx bask watch`
 3. Open `resume.html` in your browser
 
 > [!IMPORTANT]

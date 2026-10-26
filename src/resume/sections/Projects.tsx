@@ -4,7 +4,7 @@ import { Title } from "#resume/components/Title.tsx"
 import type { ResumeSchema } from "#ResumeSchema.extended.ts"
 import { removeProtocol } from "#utils.ts"
 
-export const Projects = ({ resume }: { resume: ResumeSchema }) => {
+export function Projects({ resume }: { resume: ResumeSchema }) {
   const { projects } = resume
   if (!projects || projects.length === 0) return
 
@@ -17,7 +17,7 @@ export const Projects = ({ resume }: { resume: ResumeSchema }) => {
           <div key={index}>
             <header className="flex items-center space-x-1.5">
               <span className="text-md/tight font-bold">{project.name}</span>
-              <span className="font-lighter flex items-center space-x-1.5 text-xs/tight text-[dimgray]">
+              <span className="flex items-center space-x-1.5 text-xs/tight font-lighter text-muted">
                 {project.url ? (
                   <>
                     <span>&#8226;</span>
@@ -42,10 +42,7 @@ export const Projects = ({ resume }: { resume: ResumeSchema }) => {
               {project.keywords && project.keywords.length > 0 && (
                 <div>
                   {project.keywords.map((keyword, keywordIndex) => (
-                    <span
-                      key={keywordIndex}
-                      className="mr-[0.15rem] ml-[0.15rem] rounded-sm bg-[ghostwhite] pr-[0.15rem] pl-[0.15rem] text-xs/tight leading-none"
-                    >
+                    <span key={keywordIndex} className="mx-tag rounded-sm bg-tag px-tag text-xs/none">
                       {keyword}
                     </span>
                   ))}

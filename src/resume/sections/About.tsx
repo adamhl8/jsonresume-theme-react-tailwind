@@ -6,7 +6,7 @@ import { Title } from "#resume/components/Title.tsx"
 import type { ResumeSchema } from "#ResumeSchema.extended.ts"
 import { removeProtocol } from "#utils.ts"
 
-export const About = ({ resume }: { resume: ResumeSchema }) => {
+export function About({ resume }: { resume: ResumeSchema }) {
   const { basics } = resume
   if (!basics) return
 

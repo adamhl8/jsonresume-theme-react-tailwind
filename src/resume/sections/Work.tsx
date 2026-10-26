@@ -2,7 +2,7 @@ import { Title } from "#resume/components/Title.tsx"
 import type { ResumeSchema } from "#ResumeSchema.extended.ts"
 import { removeProtocol } from "#utils.ts"
 
-export const Work = ({ resume }: { resume: ResumeSchema }) => {
+export function Work({ resume }: { resume: ResumeSchema }) {
   const { work } = resume
   if (!work || work.length === 0) return
 
@@ -17,9 +17,9 @@ export const Work = ({ resume }: { resume: ResumeSchema }) => {
               <div className="text-md/tight font-bold">{job.position}</div>
 
               <div className="space-x-1.5 text-sm/tight">
-                <span className="text-secondary font-bold">{job.name}</span>
+                <span className="font-bold text-secondary">{job.name}</span>
                 {job.url ? (
-                  <span className="font-lighter space-x-1.5 text-xs/tight text-[dimgray]">
+                  <span className="space-x-1.5 text-xs/tight font-lighter text-muted">
                     <span>&#8226;</span>
                     <a href={job.url} target="_blank" rel="noreferrer">
                       {removeProtocol(job.url)}
@@ -34,7 +34,7 @@ export const Work = ({ resume }: { resume: ResumeSchema }) => {
             <div className="space-y-1">
               {job.summary ? <p className="text-smaller/3.5">{job.summary}</p> : undefined}
               {job.highlights && job.highlights.length > 0 && (
-                <ul className="text-smaller/3.5 list-inside list-disc">
+                <ul className="list-inside list-disc text-smaller/3.5">
                   {job.highlights.map((highlight, highlightIndex) => (
                     <li key={highlightIndex}>{highlight}</li>
                   ))}

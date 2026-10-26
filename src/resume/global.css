@@ -5,8 +5,14 @@
   --font-sans: "Source Sans 3", Helvetica, Arial, sans-serif;
   --color-primary: rgb(57 66 75);
   --color-secondary: rgb(86 129 122);
+  --color-muted: dimgray;
+  --color-background: white;
+  --color-tag: ghostwhite;
+  --color-button-hover: oklch(96.7% 0.003 264.542); /* gray-100 */
   --font-weight-lighter: 350;
   --font-weight-semimedium: 450;
+  --spacing-tag: 0.15rem;
+  --shadow-page: 0 0 25px rgba(0, 0, 0, 0.25);
 
   --text-smaller: 0.8125rem; /* 13px */
   --text-smaller--line-height: calc(1.125 / 0.8125); /* 1.125 is halfway between text-sm (1.25) and text-xs (1) */
